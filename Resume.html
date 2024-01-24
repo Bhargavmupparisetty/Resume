@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        #side-menu {
+            position: fixed;
+            width: 250px;
+            height: 100%;
+            background-color: #ba0ce6;
+            color: white;
+            transition: 0.5s;
+            padding: 25px;
+        }
+
+        #profile-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #side-menu ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        #side-menu a {
+            display: block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background 0.3s;
+        }
+
+        #side-menu a:hover {
+            background-color: black;
+        }
+
+        #side-menu h4 {
+            margin-top: 10px;
+        }
+
+        header {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: #ba0ce6;
+            top: 0;
+            width: 100%;
+            color: white;
+            text-align: center;
+            font-size: large;
+        }
+        footer {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: #ba0ce6;
+            bottom: 0;
+            width: 100%;
+            color: white;
+            text-align: center;
+            font-size: large;
+        }
+
+        table {
+            border: 1.5px solid black;
+            margin: 5px;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 800px) {
+            table {
+                font-size: 10px;
+            }
+        }
+
+        td {
+            border: 1.5px solid black;
+            margin: 5px;
+            padding: 8px;
+        }
+        th {
+            border: 1.5px solid black;
+            margin: 5px;
+            padding: 8px;
+            background-color: rgb(212, 224, 233);
+        }
+
+        #main-content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+            padding: 15px;
+        }
+
+        .photo {
+            width: 100%;
+            height: 100%; 
+            overflow: hidden;
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+    </style>
+    <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/65f33feb35.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="side-menu">
+    <img id="profile-image" src="photo.jpeg" alt="Profile Image">
+    <h4 class="mt-3">Bhargav Mupparisetty</h4>
+    <p>student</p>
+    <hr class="bg-light">
+    <ul class="list-unstyled">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#languages">Languages</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#participations">Participations</a></li>
+    </ul>
+</div>
+<div id="main-content">
+    <header><h2>Portfolio</h2></header>
+    <br><br><br><br>
+
+    <!-- about -->
+    <div id="about">
+        <p style="color:rgb(101, 2, 249);font-size:30px;">About</p>
+        <hr color="grey">
+        <br>
+        <ul>
+            <strong>Bhargav Mupparisetty</strong><br>
+            <i class="fa-solid fa-phone" style="height:15px;"></i>&nbsp;&nbsp;9493362433<br>
+            <i class="fa-solid fa-envelope"></i>&nbsp;&nbsp; <a href="mailto:bhargavmupparisetty@gmail.com">bhargavmupparisetty@gmail.com</a><br>
+            <i class="fa-brands fa-linkedin"></i>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/bhargav-mupparisetty-332822248" target="_blank">https://www.linkedin.com/in/bhargav-mupparisetty-332822248</a><br>
+            <i class="fa-brands fa-github"></i>&nbsp;&nbsp;<a href="https://github.com/Bhargavmupparisetty" target="_blank">https://github.com/Bhargavmupparisetty</a><br>
+        </ul>
+    </div>
+    <br><br>
+
+    <!-- education -->
+    <div id="education">
+        <p style=" color:rgb(101, 2, 249);font-size:30px;">Education</p>
+        <hr color="grey">
+        <br>
+        <table>
+            <tr>
+                <th>Sno</th>
+                <th>Class</th>
+                <th>Institute</th>
+                <th>Marks</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>SSC</td>
+                <td>Kanna school</td>
+                <td>10 CGPA</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Intermediate</td>
+                <td>Narayana junior college</td>
+                <td>986 marks</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Graduation</td>
+                <td>VR siddhartha engineering college</td>
+                <td>9.4 CGPA</td>
+            </tr>
+        </table>
+    </div>
+    <br><br>
+
+    <!-- skills -->
+
+    <div id="skills">
+        <p style="color:rgb(101, 2, 249);font-size:30px;">Skills</p>
+        <hr color="grey">
+        <br>
+        <ul>
+            <li>Team management</li>
+            <li>Public speaking</li>
+            <li>Problem solving</li>
+            <li>Time management</li>
+            <li>Database management</li>
+        </ul>
+    </div>
+    <br><br>
+
+    <!-- languages -->
+
+    <div id="languages">
+        <p style="color:rgb(101, 2, 249);font-size:30px;">Languages</p>
+        <hr color="grey">
+        <br>
+        <ul>
+            <li>English</li>
+            <li>Telugu</li>
+            <li>Hindi</li>
+        </ul>
+    </div>
+    <br><br>
+
+    <!-- projects -->
+
+    <div id="projects">
+        <p style="color:rgb(101, 2, 249);font-size:30px;">Projects</p>
+        <hr color="grey">
+        <br>
+        <table>
+            <tr>
+                <th>Sno</th>
+                <th>Project</th>
+                <th>technologies used</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>fisheries stock assessment</td>
+                <td>ML,html</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Online ticket booking system</td>
+                <td>Java programming</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Musician database</td>
+                <td>PHP,SQL,html,css</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Scholarship awareness portal</td>
+                <td>html,css</td>
+            </tr>
+        </table>
+        <br>
+        <li>Source : <a href = "https://drive.google.com/drive/folders/1KrDrjNR16OE9HptgDznSl_4-CMbyeGfv?usp=sharing" target="_blank">Go to projects</a></li>
+    </div>
+    <br><br>
+
+    <!-- certificates -->
+
+    <div id="certificates">
+    <p  style="color: rgb(101, 2, 249);font-size:30px;">Certificates</p>
+    <hr color="grey">
+    <br>
+            <ul>
+                <li>Cybersecurity from Cisco</li>
+                <li>Introduction to IOT from Cisco</li>
+                <li>Python programming</li>
+                <li>C programming</li>
+                <li>Ethical hacking</li>
+                <li>Networking from Cisco</li>
+                <li>AI for everyone from Coursera</li>
+            </ul>
+            <br>
+         <li>Source : <a href = "https://drive.google.com/drive/folders/1BhH-4SBJ-CyO1pPXaQO4OlqJAGN3w5pd?usp=drive_link" target="_blank">Go to certificates</a></li>
+    </div>
+    <br><br>
+    <!-- participations -->
+    <div id="participations">
+        <p  style="color: rgb(101, 2, 249);font-size:30px;">participations</p>
+        <hr color="grey">
+        <br>
+        <ul>
+            <li>Represented VR Siddhartha engineering college at National level Hackathon,VJIT.</li>
+            <li>Represented VR Siddharhta engineering college at Vignan Hackathon.</li>
+            <li>Lead the team to the finals of <strong>Smart India Hackathon (SIH)</strong>.</li>
+        </ul>
+        <br>
+        <div class="container mt-4">
+            <div class="photo-grid">
+                <div class="photo">
+                    <img src="photo1.jpeg" alt="Photo 1">
+                </div>
+                <div class="photo">
+                    <img src="photo2.jpeg" alt="Photo 2">
+                </div>
+                <div class="photo">
+                    <img src="photo3.jpeg" alt="Photo 3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <footer>@bhargavmupparisetty</footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
