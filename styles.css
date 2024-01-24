@@ -1,4 +1,4 @@
-body {
+ body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
@@ -13,11 +13,6 @@ body {
             color: white;
             transition: 0.5s;
             padding: 25px;
-        }
-
-        #profile-image {
-            max-width: 100%;
-            height: auto;
         }
 
         #side-menu ul {
@@ -43,27 +38,17 @@ body {
             margin-top: 10px;
         }
 
-        header {
+        header, footer {
             padding-top: 10px;
             padding-bottom: 10px;
             background-color: #ba0ce6;
-            top: 0;
-            width: 100%;
             color: white;
             text-align: center;
             font-size: large;
+            margin-left: -15px; 
+            margin-right: -15px; 
         }
-        footer {
-            padding-top: 10px;
-            padding-bottom: 10px;
-            background-color: #ba0ce6;
-            bottom: 0;
-            width: 100%;
-            color: white;
-            text-align: center;
-            font-size: large;
-        }
-
+        
         table {
             border: 1.5px solid black;
             margin: 5px;
@@ -82,10 +67,19 @@ body {
             padding: 8px;
             background-color: rgb(212, 224, 233);
         }
-
         #main-content {
             margin-left: 250px;
             padding: 20px;
+        }
+
+        @media screen and (max-width: 992px) {
+            #side-menu {
+                display: none;
+            }
+
+            #main-content {
+                margin-left: 0;
+            }
         }
 
         .photo-grid {
@@ -93,6 +87,19 @@ body {
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 15px;
             padding: 15px;
+        }
+
+
+        @media screen and (max-width: 800px){
+            #main-content {
+                padding: 4px;
+            }
+            
+            .photo-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 10px;
+                padding: 10px;
+            }
         }
 
         .photo {
