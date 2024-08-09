@@ -18,7 +18,7 @@ This is a simple and responsive webpage designed to showcase a resume. The webpa
     https://github.com/Bhargavmupparisetty/Resume.git
     ```
 
-2. Open the `Resume.html` file in your preferred web browser.
+2. Open the `index.html` file in your preferred web browser.
 
 3. Update the content in the HTML file with your personal details, education information, skills, etc.
 
